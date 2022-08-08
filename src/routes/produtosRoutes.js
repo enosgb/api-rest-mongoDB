@@ -5,5 +5,7 @@ const router = express.Router();
 
 router
     .get('/produtos', ProdutoController.listarProdutos)
+    .post('/produtos', ProdutoController.cadastrarProduto)
+    .put('/produtos/:id', ProdutoController.atualizarProduto)
 
 export default router;
