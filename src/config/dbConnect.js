@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect("mongodb+srv://SU:687412@cluster0.q28klwk.mongodb.net/api-rest");
+mongoose.connect("your mongo connect configuration");
 
 let db = mongoose.connection;
 
