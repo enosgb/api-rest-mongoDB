@@ -5,6 +5,7 @@ const produtoSchema = new mongoose.Schema(
         id:{type:String},
         desc:{type: String, required: true},
         preco:{type: String, required: true },
+        usuario:{type: mongoose.Schema.Types.ObjectId, ref: 'usuarios', require: true}
     }
 )
 
